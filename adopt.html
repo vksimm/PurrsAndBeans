@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purrs & Beans</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purrs & Beans</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="page-wrapper center-children">
+    <div id="nav-bar" class="top-bar-wrapper">
+      <header class="top-bar">
+        <nav id="top-menu" class="top-menu">
+          <ul class="menu-items menu-items-left">
+            <li class="menu-item no-list-style"><a class="u-link menu-link" href="about.html">About</a></li>
+            <li class="menu-item no-list-style"><a class="u-link menu-link" href="meet-the-cats.html">Residents</a></li>
+            <li class="menu-item no-list-style"><a class="u-link menu-link" href="">Bookings</a></li>
+          </ul>
+          <a href="/">
+            <img class="pab-logo" src="assets/logo.png" alt="Purrs & Beans Logo">
+          </a>
+          <ul class="menu-items menu-items-right">
+            <li class="menu-item no-list-style"><a class="u-link menu-link" href="">Donate</a></li>
+            <li class="menu-item no-list-style"><a class="u-link menu-link" href="adopt.html">Adopt</a></li>
+            <li class="menu-item no-list-style"><a class="u-link menu-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <main>
-        <h1>Welcome to My Website</h1>
-        <a href="./meet-the-cats.html">Residents</a>
+    <img class="hero-banner" src="assets/p-and-b-adoptions-crop.jpg" alt="Adoption Room">
+    <main class="inner-page-wrapper">
+      <div class="content-wrapper center-children">
+        <div class="sm-content">
+          <h1 class="main-heading">Adoptions</h1>
+          <p class="body-text">
+            We operate as a foster home for Gutter Kitties and 9 Lives Orphanage, 
+            fostering their cats in a dedicated space. We act on behalf of these 
+            rescues, helping to facilitate the cats' adoptions when they are ready 
+            to move on to forever homes, with 100% of the adoption fees going back 
+            to the rescue.
+          </p>
+        </div>
+      </div>
+      <div class="adopt-form-wrapper center-children">
         <form class="adopt-form">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname">
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="adoptee-name">Adoptee Name:</label>
-            <input type="text" id="adoptee-name" name="adoptee-name">
-            <label for="visit-date">Date Visited:</label>
-            <input type="date" id="visit-date" name="visit-date">
-            <label for="adopt-bio">Why you would like to adopt:</label>
-            <input type="textbox" id="adopt-bio" name="adopt-bio">
+          <div class="input-container">
+            <input type="text" id="fname" name="fname" required>
+            <label for="fname">First Name</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="lname" name="lname" required>
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="email" name="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="adoptee-name" name="adoptee-name" required>
+            <label for="adoptee-name">Adoptee Name</label>
+          </div>
+          <div class="input-container">
+            <input type="date" id="visit-date" name="visit-date" required>
+            <label for="visit-date">Date Visited</label>
+          </div>
+          <div class="input-container">
+            <textarea id="adopt-bio" name="adopt-bio" rows="7" required></textarea>
+            <label for="adopt-bio">Why you would like to adopt</label>
+          </div>
+
+          <button class="button" type="submit">Submit</button>
         </form>
+      </div>
     </main>
-  </body>
+    <footer class="main-footer center-children">
+      <div class="sm-wrapper">
+        <a href="https://www.instagram.com/purrsandbeansnz/" target="_blank">
+            <img class="sm-icon" src="assets/icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/purrsandbeansnz" target="_blank">
+            <img class="sm-icon" src="assets/icons/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.facebook.com/purrsandbeansnz" target="_blank">
+            <img class="sm-icon" src="assets/icons/facebook.png" alt="Spotify">  
+        </a>
+        <a href="mailto:purrsandbeansnz@gmail.com" target="_blank">
+            <img class="sm-icon" src="assets/icons/mail.png" alt="Spotify">  
+        </a>
+      </div>
+      <img class="pab-logo-footer" src="assets/logo-white.png" alt="Purrs & Beans Logo">
+    </footer>
+</body>
+
 </html>
